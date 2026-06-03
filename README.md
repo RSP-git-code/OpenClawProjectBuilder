@@ -1,30 +1,38 @@
-OpenClawProjectBuilder
-An AI-powered project scaffolding bot built with OpenClaw, Google Gemini, and Telegram. Send a one-line idea to a Telegram bot and get back a full project skeleton — folder structure, starter code, dependencies, and documentation — instantly.
+# OpenClawProjectBuilder
+OpenClawProjectBuilder is an AI-powered coding assistant that helps developers brainstorm ideas, generate structured project scaffolding, and automatically create documentation from a single prompt.
+Built using Docker, OpenClaw, and Telegram, the system allows users to describe a project via a Telegram bot. The agent then generates a complete project structure, including starter code, dependency files, and a detailed README, and saves it locally in the WSL workspace.
+This approach significantly reduces the time required for initial project setup and helps developers focus directly on implementation and problem-solving.
 
-💡 What It Does
+# What It Does
 You type in Telegram:
 
 "build a spam classifier using logistic regression and gmail api"
 
 And the bot generates:
 
-📂 Full folder structure
-💻 Starter code with placeholder functions
-📦 requirements.txt / package.json
-📄 README.md with setup instructions
-🏗️ Architecture explanation
+-📂 Full folder structure
+
+-💻 Starter code with placeholder functions
+
+-📦 requirements.txt / package.json
+
+-📄 README.md with setup instructions
+
+-🏗️ Architecture explanation
 
 All files are saved to your workspace and ready to run.
 
-🛠️ Tech Stack
+# Tech Stack
 
-OpenClaw — AI gateway and agent framework
-Google Gemini 2.5 Flash — LLM powering the bot
-Telegram Bot API — chat interface
-Docker — containerized setup
+- OpenClaw : AI gateway and agent framework
+-Google AI Models :gemini-3.5-flash,gemma-4-26b-a4b-it,gemini 2.5 Flash-Lite
+
+-Telegram Bot API — chat interface:@BotFather
+
+-Docker — containerized setup
 
 
-📁 Example Projects Generated
+# Example Projects Generated
 ProjectDescriptiontodo_appPython CLI todo app with SQLitetravel_websiteTravel website with frontendpilot_farm_platformFastAPI + PostgreSQL + PostGIS crop registration platform
 
 🚀 Setup
