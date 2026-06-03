@@ -1,4 +1,4 @@
-ClawProjectBuilder
+OpenClawProjectBuilder
 An AI-powered project scaffolding bot built with OpenClaw, Google Gemini, and Telegram. Send a one-line idea to a Telegram bot and get back a full project skeleton — folder structure, starter code, dependencies, and documentation — instantly.
 
 💡 What It Does
