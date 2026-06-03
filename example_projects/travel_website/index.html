@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Explore the Unexplored</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">WANDER<span>LUST</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">Escape to Paradise</h1>
+            <p class="reveal">Discover breathtaking destinations and create memories that last a lifetime.</p>
+            <a href="#destinations" class="btn reveal">Explore Now</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="destination-grid">
+            <div class="card reveal" data-location="Maldives">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Maldives</h3>
+                    <p>Crystal clear waters and white sandy beaches.</p>
+                </div>
+            </div>
+            <div class="card reveal" data-location="Venice">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Venice</h3>
+                    <p>Romantic canals and historic architecture.</p>
+                </div>
+            </div>
+            <div class="card reveal" data-location="Kyoto">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Kyoto</h3>
+                    <p>Serene temples and stunning cherry blossoms.</p>
+                </div>
+            </div>
+            <div class="card reveal" data-location="Switzerland">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Switzerland</h3>
+                    <p>Majestic Alps and pristine lakes.</p>
+                </div>
+            </div>
+            <div class="card reveal" data-location="Paris">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Paris</h3>
+                    <p>The city of lights, art, and romance.</p>
+                </div>
+            </div>
+            <div class="card reveal" data-location="Tokyo">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-info">
+                    <h3>Tokyo</h3>
+                    <p>A perfect blend of neon and tradition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text reveal">
+                <h2>Our Story</h2>
+                <p>Wanderlust was born from a passion for discovery. We believe that travel is more than just visiting places; it's about connecting with cultures, experiencing new perspectives, and finding beauty in the unexpected.</p>
+            </div>
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1488646953014-85c846e2d785?auto=format&fit=crop&w=800&q=80" alt="Traveler">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form reveal">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Itinerary Modal -->
+    <div id="itinerary-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-setup">
+                <h2 id="modal-title">Plan Your Trip to ...</h2>
+                <p>Tell us a bit more to create your perfect itinerary.</p>
+                <form id="planner-form">
+                    <div class="form-group">
+                        <label for="days">How many days?</label>
+                        <input type="number" id="days" min="1" max="14" value="3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Your Budget Preference</label>
+                        <select id="budget">
+                            <option value="budget">Budget (Backpacker)</option>
+                            <option value="mid">Mid-range (Comfort)</option>
+                            <option value="luxury">Luxury (Premium)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Generate Itinerary</button>
+                </form>
+            </div>
+            <div id="modal-result" class="hidden">
+                <h2 id="result-title">Your Personalized Plan</h2>
+                <div id="itinerary-content"></div>
+                <button id="reset-planner" class="btn">Plan Another Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Wanderlust Travels. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
