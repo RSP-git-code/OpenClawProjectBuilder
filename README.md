@@ -92,10 +92,11 @@ docker compose logs openclaw-gateway | grep -i telegram
 # Stop everything
 docker compose down
 
-📸 How It Works
+# 📸 How It Works
 
 Send a project idea to your Telegram bot
-OpenClaw routes it to Gemini 2.5 Flash
+
+OpenClaw routes it to current selected model 
 The AI generates a complete project skeleton
 Files are saved to ~/.openclaw/workspace/
 Copy them to your machine and start coding
