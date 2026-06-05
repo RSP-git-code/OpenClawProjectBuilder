@@ -1,8 +1,8 @@
 # 🦞 OpenClawProjectBuilder
+
 OpenClawProjectBuilder is an AI-powered coding assistant that helps developers brainstorm ideas, generate structured project scaffolding, and automatically create documentation from a single prompt.
 Built using Docker, OpenClaw, and Telegram, the system allows users to describe a project via a Telegram bot. The agent then generates a complete project structure, including starter code, dependency files, and a detailed README, and saves it locally in the WSL workspace.
 This approach significantly reduces the time required for initial project setup and helps developers focus directly on implementation and problem-solving.
---
 
 # What It Does
 You type your project idea or you can also give your project idea documentation in Telegram:
