@@ -2,6 +2,7 @@
 OpenClawProjectBuilder is an AI-powered coding assistant that helps developers brainstorm ideas, generate structured project scaffolding, and automatically create documentation from a single prompt.
 Built using Docker, OpenClaw, and Telegram, the system allows users to describe a project via a Telegram bot. The agent then generates a complete project structure, including starter code, dependency files, and a detailed README, and saves it locally in the WSL workspace.
 This approach significantly reduces the time required for initial project setup and helps developers focus directly on implementation and problem-solving.
+--
 
 # What It Does
 You type your project idea or you can also give your project idea documentation in Telegram:
@@ -32,16 +33,13 @@ All files are saved to your workspace and ready to run.
 
 - Docker — containerized setup
 
-
-# Example Projects Generated
-ProjectDescriptiontodo_appPython CLI todo app with SQLitetravel_websiteTravel website with frontendpilot_farm_platformFastAPI + PostgreSQL + PostGIS crop registration platform
-
-🚀 Setup
+# Setup
 Prerequisites
 
-Docker Desktop
-Telegram Bot Token (from @BotFather)
-Google Gemini API Key (from Google AI Studio)
+- Docker Desktop
+- Telegram Bot Token (from @BotFather)
+- Google Gemini API Key (from Google AI Studio)
+- OpenClaw (Clone the openclaw repo and download it locally in your device )
 
 1. Clone the repo
 bashgit clone openclaw repo
@@ -65,9 +63,10 @@ docker compose run --rm openclaw-cli configure --section model
 
 # Configure Telegram channel
 docker compose run --rm openclaw-cli configure --section channels
-# Enter your Telegram bot token
+# Enter your Telegram bot token:
+The Bot Token will be given by @BotFather .Also dont share this Token with anyone .
 5. Approve yourself
-Message your bot on Telegram — it will send a pairing code. Run:
+Message your bot on Telegram :it will send a pairing code. Run:
 bashdocker compose run --rm openclaw-cli pairing approve telegram YOUR_PAIRING_CODE
 6. Start building!
 Message your bot with any project idea:
