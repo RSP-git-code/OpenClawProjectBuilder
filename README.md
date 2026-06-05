@@ -4,7 +4,7 @@ Built using Docker, OpenClaw, and Telegram, the system allows users to describe 
 This approach significantly reduces the time required for initial project setup and helps developers focus directly on implementation and problem-solving.
 
 # What It Does
-You type in Telegram:
+You type your project idea or you can also give your project idea documentation in Telegram:
 
 "build a spam classifier using logistic regression and gmail api"
 
