@@ -29,12 +29,11 @@ All files are saved to your workspace and ready to run.
 
 - Google AI Models :gemini-3.5-flash,gemma-4-26b-a4b-it,gemini 2.5 Flash-Lite
 
-- Telegram Bot API — chat interface:@BotFather
-
-- Docker — containerized setup
+- Telegram Bot Token: used as a chat interface between user and the bot 
+- Docker : containerized setup
 
 # Setup
-Prerequisites
+Prerequisites:
 
 - Docker Desktop
 - Telegram Bot Token (from @BotFather)
